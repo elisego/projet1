@@ -1,12 +1,134 @@
-CSS
 /* commun a toutes les pages*/
-
-
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: ;
+}
 
 
 
 /* Accueil*/
 
+body { 
+    
+    }
+
+
+    #wrap {
+        font-family: sans-serif;
+        font-size: 21px;
+        line-height: 1.6;
+        margin: 0;
+        display: flex;
+        color: #f00;
+        transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+      }
+      #wrap:not(:target) {
+        transform: translate3d(-335px, 0, 0);
+      }
+      #wrap:target {
+        transform: translate3d(0, 0, 0);
+      }
+      #open, #close {
+        height: 100vh;
+        text-align: right;
+        display: block;
+        margin-right: -30px;
+      }
+      #wrap:target #open, #wrap:not(:target) #close {
+        display: none;
+      }
+      #wrap:target #open {
+        display: none;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+        display: block;
+      }
+      .header {
+        background: black;
+        width: 360px;
+        padding: 0 20px;
+        display:inline-block;
+        vertical-align:top;
+      }
+      .nav {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+      }
+    #wrap{
+        display: flex;
+        
+    }
+    #nom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        width: 50vh;
+      }
+    
+      .flex{
+        background: url(https://i.postimg.cc/rpk4jnwB/background.jpg);
+        background-size: cover;
+          display: flex;
+      }
+
+
+
+/* Menus */
+
+#bodymenu{
+    background-color: black;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1{
+    text-align: center;
+    font-size: 10vh;
+    margin: 4% 0%;
+}
+h2{
+  font-size: 5vh; 
+  margin: 3% 0%;
+}
+li{
+    list-style-type: none;
+}
+
+.lesmenus{
+  display: flex;
+  flex-direction: column;
+}
+
+#menuj, #menu{
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .lesmenus{
+    display: flex;
+    flex-direction: row ;
+  }
+  #menuj{
+  width: 50%;
+  text-align: center;
+  }
+  #menu{
+  width: 50%;
+  text-align: center;
+  }
+}
+ 
 
 
 

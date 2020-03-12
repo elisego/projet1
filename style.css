@@ -1,5 +1,56 @@
-CSS
 /* commun a toutes les pages*/
+@import url('https://fonts.googleapis.com/css?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+footer { 
+	bottom: 0;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: 'Sancreek', comic sans ms;;
+}
+
+/* Header */
+
+.nav {
+  font-size: 5vh;
+  font-family: 'Sancreek', comic sans ms;
+  display: flex;
+  justify-content: space-evenly;
+  top: -1em;
+  left:0;
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  line-height: 15vh;
+  margin-top:1%;
+
+  
+}
+
+a:link {color: white;}
+a:visited {color: white;}
+a:hover {color: white;}
+a:active {color: white;}
+
+.nav a {
+  text-decoration: none;}
+
+
+
+
+p{
+  color: white;
+}
 
 
 
@@ -9,8 +60,61 @@ CSS
 
 
 
+/* Menus */
 
+#bodymenu{
+    background-color: black;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
 
+li{
+  list-style-type: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 8vh;
+    margin: 5% 0% 1% 0%;
+}
+
+h2{
+  font-size: 6vh; 
+  margin: 0 0 2% 0;
+  text-decoration: underline;
+}
+h3{
+  font-size: 4vh;
+
+}
+p, li{
+  font-size: 2vh;
+}
+
+.lesmenus{
+  display: flex;
+  flex-direction: column;
+}
+
+#menuj, #menu{
+  text-align: center;
+  margin: 2% 0;
+}
+
+@media screen and (min-width: 705px) {
+  .lesmenus{
+    display: flex;
+    flex-direction: row;
+  }
+  #menuj{
+    width: 50%;
+    text-align: center;
+  }
+  #menu{
+  width: 50%;
+  text-align: center;
+  }
+}
 
 
 /* la p'tite histoire*/
@@ -23,6 +127,35 @@ CSS
 
 /* Accès et contacts*/
 
+body{
+    background-color: black;
+}
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.acces{
+    padding-bottom: 20px;
+}
+form{
+    padding-top: 30px;
+}
 
 
 
@@ -31,3 +164,13 @@ CSS
 
 
 /* Mentions légales*/
+
+#bodymentions{
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+#bodymentions h1{
+  margin-top: 10%;
+}

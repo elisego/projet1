@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+
 /* commun a toutes les pages*/
 @import url('https://fonts.googleapis.com/css?family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
@@ -49,11 +51,81 @@ a:active {color: white;}
 
 
 p{
-  color: white;
+  color: blanchedalmond;
 }
 
 
 
+/* la p'tite histoire version responsive*/
+.titre{
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 0 #000, 0 2px #000,
+    2px 0 #000, 0 -1px #000;;
+    padding-top: 60px;
+    font-size: 50px;
+}
+
+body{
+    background-color: #121111;
+    background-attachment: fixed;
+    color: blanchedalmond;
+}
+
+img{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 12em;
+}
+
+#burger{
+    height: 300px;
+}
+
+.container{
+    text-align: center;
+}    
+
+#text{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 0 #000, 0 2px #000,
+    1px 0 #000, 0 -1px #000;;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+/*Pour la taille desktop*/
+
+@media screen and (min-width: 705px){
+    .Ligne1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .Ligne2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    img{
+        height: 420px;
+        width: 725px;
+        border-radius: 12em;
+    }
+
+    #burger{
+        height: 420px;
+        width: 725px;
+    }
+
+    
+}
 
 
 /* Accueil*/

@@ -1,83 +1,62 @@
 /* commun a toutes les pages*/
+@import url('https://fonts.googleapis.com/css?family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-h1{
-    font-size: ;
+
+
+
+
+footer { 
+	bottom: 0;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: 'Sancreek', comic sans ms;;
+}
+
+/* Header */
+
+.nav {
+  font-size: 5vh;
+  font-family: 'Sancreek', comic sans ms;
+  display: flex;
+  justify-content: space-evenly;
+  top: -1em;
+  left:0;
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  line-height: 15vh;
+  margin-top:1%;
+
+  
+}
+
+a:link {color: white;}
+a:visited {color: white;}
+a:hover {color: white;}
+a:active {color: white;}
+
+.nav a {
+  text-decoration: none;}
+
+
+
+
+p{
+  color: white;
 }
 
 
 
+
+
 /* Accueil*/
-
-body { 
-    
-    }
-
-
-    #wrap {
-        font-family: sans-serif;
-        font-size: 21px;
-        line-height: 1.6;
-        margin: 0;
-        display: flex;
-        color: #f00;
-        transition: transform .4s cubic-bezier(.25, .1, .25, 1);
-      }
-      #wrap:not(:target) {
-        transform: translate3d(-335px, 0, 0);
-      }
-      #wrap:target {
-        transform: translate3d(0, 0, 0);
-      }
-      #open, #close {
-        height: 100vh;
-        text-align: right;
-        display: block;
-        margin-right: -30px;
-      }
-      #wrap:target #open, #wrap:not(:target) #close {
-        display: none;
-      }
-      #wrap:target #open {
-        display: none;
-      }
-      .nav a {
-        color: white;
-        text-decoration: none;
-        display: block;
-      }
-      .header {
-        background: black;
-        width: 360px;
-        padding: 0 20px;
-        display:inline-block;
-        vertical-align:top;
-      }
-      .nav {
-        padding: 25px;
-        display: flex;
-        flex-direction: column;
-      }
-    #wrap{
-        display: flex;
-        
-    }
-    #nom{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: blue;
-        width: 50vh;
-      }
-    
-      .flex{
-        background: url(https://i.postimg.cc/rpk4jnwB/background.jpg);
-        background-size: cover;
-          display: flex;
-      }
 
 
 
@@ -89,17 +68,27 @@ body {
     font-family: 'Permanent Marker', cursive;
 }
 
+li{
+  list-style-type: none;
+}
+
 h1{
     text-align: center;
-    font-size: 10vh;
-    margin: 4% 0%;
+    font-size: 8vh;
+    margin: 5% 0% 1% 0%;
 }
+
 h2{
-  font-size: 5vh; 
-  margin: 3% 0%;
+  font-size: 6vh; 
+  margin: 0 0 2% 0;
+  text-decoration: underline;
 }
-li{
-    list-style-type: none;
+h3{
+  font-size: 4vh;
+
+}
+p, li{
+  font-size: 2vh;
 }
 
 .lesmenus{
@@ -109,30 +98,23 @@ li{
 
 #menuj, #menu{
   text-align: center;
+  margin: 2% 0;
 }
 
-
-
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 705px) {
   .lesmenus{
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
   }
   #menuj{
-  width: 50%;
-  text-align: center;
+    width: 50%;
+    text-align: center;
   }
   #menu{
   width: 50%;
   text-align: center;
   }
 }
- 
-
-
-
-
 
 
 /* la p'tite histoire*/
@@ -182,3 +164,13 @@ form{
 
 
 /* Mentions légales*/
+
+#bodymentions{
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+#bodymentions h1{
+  margin-top: 10%;
+}

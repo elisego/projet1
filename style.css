@@ -1,5 +1,7 @@
-/* commun a toutes les pages*/
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 
+/* commun a toutes les pages*/
+@import url('https://fonts.googleapis.com/css?family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 *{
     margin: 0;
@@ -7,6 +9,125 @@
 }
 
 
+
+
+footer { 
+	bottom: 0;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: 'Sancreek', comic sans ms;;
+}
+
+/* Header */
+
+.nav {
+  font-size: 5vh;
+  font-family: 'Sancreek', comic sans ms;
+  display: flex;
+  justify-content: space-evenly;
+  top: -1em;
+  left:0;
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  line-height: 15vh;
+  margin-top:1%;
+
+  
+}
+
+a:link {color: white;}
+a:visited {color: white;}
+a:hover {color: white;}
+a:active {color: white;}
+
+.nav a {
+  text-decoration: none;}
+
+
+
+
+p{
+  color: blanchedalmond;
+}
+
+
+
+/* la p'tite histoire version responsive*/
+.titre{
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 0 #000, 0 2px #000,
+    2px 0 #000, 0 -1px #000;;
+    padding-top: 60px;
+    font-size: 50px;
+}
+
+body{
+    background-color: #121111;
+    background-attachment: fixed;
+    color: blanchedalmond;
+}
+
+img{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 12em;
+}
+
+#burger{
+    height: 300px;
+}
+
+
+
+.container{
+    text-align: center;
+}    
+
+#text{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 0 #000, 0 2px #000,
+    1px 0 #000, 0 -1px #000;;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+/*Pour la taille desktop*/
+
+@media screen and (min-width: 705px){
+    .Ligne1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .Ligne2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    img{
+        height: 420px;
+        width: 725px;
+        border-radius: 12em;
+    }
+
+    #burger{
+        height: 420px;
+        width: 725px;
+    }
+
+    
+}
 
 
 /* Accueil*/
@@ -57,6 +178,7 @@ a{
 
 
 
+
 /* Menus */
 
 #bodymenu{
@@ -65,41 +187,52 @@ a{
     font-family: 'Permanent Marker', cursive;
 }
 
-h1{
-    text-align: center;
-    font-size: 10vh;
-    margin: 4% 0%;
-}
-h2{
-  font-size: 5vh; 
-  margin: 3% 0%;
-}
+
+
 li{
     list-style-type: none;
 }
 
-.lesmenus{
 
+
+
+h1{
+    text-align: center;
+    font-size: 8vh;
+    margin: 5% 0% 1% 0%;
+}
+
+h2{
+  font-size: 6vh; 
+  margin: 0 0 2% 0;
+  text-decoration: underline;
+}
+h3{
+  font-size: 4vh;
+
+}
+p, li{
+  font-size: 2vh;
+}
+
+.lesmenus{
   display: flex;
   flex-direction: column;
 }
 
 #menuj, #menu{
   text-align: center;
+  margin: 2% 0;
 }
 
-
-
-
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 705px) {
   .lesmenus{
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
   }
   #menuj{
-  width: 50%;
-  text-align: center;
+    width: 50%;
+    text-align: center;
   }
   #menu{
   width: 50%;
@@ -161,3 +294,13 @@ form p{
 
 
 /* Mentions légales*/
+
+#bodymentions{
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+#bodymentions h1{
+  margin-top: 10%;
+}

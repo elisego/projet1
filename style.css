@@ -25,6 +25,10 @@ footer {
   margin-bottom: 2vh;
 }
 
+.footer{
+  position: absolute;
+}
+
 /* Header */
 
 

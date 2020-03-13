@@ -1,24 +1,29 @@
-<!doctype html>
+<!Doctype html>
 <html lang="fr">
   
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
   <title>La p'tite ardoise</title>
   <link rel="stylesheet" href="style.css"/>
 
 </head>
 
-<header>
-
-</header>
-
-
-
-
-<body class="corp">
-
+<body>
+    <div class="corp">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="menus.html">Menu</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="acces.html">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+      <div class="acces">
     <h1>LA P'TITE ARDOISE</h1>
-    <div class="acces">
+    
         <h2>Accès</h2>
         <p>15 Bis Boulevard Babin Chevaye<br />
     44000 Nantes<br />
@@ -32,16 +37,16 @@
         <p>Pour toute demande de privatisation ou de réservation de groupe n'hésitez pas à nous envoyer une demande via le formulaire, nous serons ravis de vous répondre!</p>
         <form method="post" action="traitement.php">
             <p>
-                <input type="text" name="name" id="name" placeholder="Nom" size="50" maxlength="10" />
+                <input type="text" name="name" id="name" placeholder="Nom" size="40" maxlength="10" />
             </p>
             <p>
-                <input type="email" name="mail" id="mail" placeholder="@" size="50" maxlength="10" />
+                <input type="email" name="mail" id="mail" placeholder="@" size="40" maxlength="10" />
             </p>
             <p>
-                <input type="text" name="tel" id="tel" placeholder="tel" size="50" maxlength="10" />
+                <input type="text" name="tel" id="tel" placeholder="tel" size="40" maxlength="10" />
             </p>
             <p>
-                <textarea name="demande" id="demande"  rows="10" cols="50">
+                <textarea name="demande" id="demande"  rows="10" cols="40">
 Message
                 </textarea>
             </p>
@@ -52,9 +57,10 @@ Message
         </form>
     </div>
   
-  
-</body>
 <footer>
-    Mentions légales
+    <a href="https://www.facebook.com/la.ptite.ardoise.restaurant"> facebook</a>
+    <a href="mentions.html">Mentions légales</a> 
 </footer>
+    </div>
+</body>
 </html>

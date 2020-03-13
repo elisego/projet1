@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
-
 /* commun a toutes les pages*/
 @import url('https://fonts.googleapis.com/css?family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
@@ -8,35 +6,30 @@
     padding: 0;
 }
 
-
-
-
 footer { 
 	bottom: 0;
-  position: fixed;
-  margin: auto;
-  width: 100%;
-  margin-bottom: 2%;
-  text-align: center;
-  font-family: 'Sancreek', comic sans ms;;
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Sancreek', comic sans ms;;
 }
 
 /* Header */
 
 .nav {
-  font-size: 5vh;
-  font-family: 'Sancreek', comic sans ms;
-  display: flex;
-  justify-content: space-evenly;
-  top: -1em;
-  left:0;
-  width: 100%;
-  position: fixed;
-  background: transparent;
-  line-height: 15vh;
-  margin-top:1%;
-
-  
+    font-size: 5vh;
+    font-family: 'Sancreek', comic sans ms;
+    display: flex;
+    justify-content: space-evenly;
+    top: -1em;
+    left:0;
+    width: 100%;
+    position: fixed;
+    background: transparent;
+    line-height: 15vh;
+    margin-top:1%;
 }
 
 a:link {color: white;}
@@ -45,13 +38,10 @@ a:hover {color: white;}
 a:active {color: white;}
 
 .nav a {
-  text-decoration: none;}
-
-
-
+    text-decoration: none;}
 
 p{
-  color: blanchedalmond;
+    color: blanchedalmond;
 }
 
 
@@ -98,38 +88,30 @@ img{
 
 /*Pour la taille desktop*/
 
-@media screen and (min-width: 705px){
-    .Ligne1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    
-    .Ligne2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-
-    img{
-        height: 420px;
-        width: 725px;
-        border-radius: 12em;
-    }
-
-    #burger{
-        height: 420px;
-        width: 725px;
-    }
-
-    
+@media screen and (min-width: 705px) {
+.Ligne1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.Ligne2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
-
-/* Accueil*/
-
+img{
+    height: 420px;
+    width: 725px;
+    border-radius: 12em;
+}
+#burger{
+    height: 420px;
+    width: 725px;
+}
+}
 
 
 /* Menus */
@@ -141,7 +123,7 @@ img{
 }
 
 li{
-  list-style-type: none;
+    list-style-type: none;
 }
 
 h1{
@@ -151,50 +133,42 @@ h1{
 }
 
 h2{
-  font-size: 6vh; 
-  margin: 0 0 2% 0;
-  text-decoration: underline;
+    font-size: 6vh; 
+    margin: 0 0 2% 0;
+    text-decoration: underline;
 }
 h3{
-  font-size: 4vh;
+    font-size: 4vh;
 
 }
 p, li{
-  font-size: 2vh;
+    font-size: 2vh;
 }
 
 .lesmenus{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #menuj, #menu{
-  text-align: center;
-  margin: 2% 0;
+    text-align: center;
+    margin: 2% 0;
 }
 
 @media screen and (min-width: 705px) {
-  .lesmenus{
+    .lesmenus{
     display: flex;
     flex-direction: row;
-  }
-  #menuj{
+}
+#menuj{
     width: 50%;
     text-align: center;
-  }
-  #menu{
-  width: 50%;
-  text-align: center;
-  }
 }
-
-
-/* la p'tite histoire*/
-
-
-
-
-
+#menu{
+    width: 50%;
+    text-align: center;
+}
+}
 
 
 /* Accès et contacts*/
@@ -229,20 +203,14 @@ form{
     padding-top: 30px;
 }
 
-
-
-
-
-
-
 /* Mentions légales*/
 
 #bodymentions{
-  background-color: black;
-  color: white;
-  font-family: cursive;
-  text-align: center;
+    background-color: black;
+    color: white;
+    font-family: cursive;
+    text-align: center;
 }
 #bodymentions h1{
-  margin-top: 10%;
+    margin-top: 10%;
 }

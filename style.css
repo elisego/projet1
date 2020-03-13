@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
-
 /* commun a toutes les pages*/
 @import url('https://fonts.googleapis.com/css?family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
@@ -36,13 +34,6 @@ a:link {color: blanchedalmond;}
 a:visited {color:blanchedalmond;}
 a:hover {color:blanchedalmond;}
 a:active {color: blanchedalmond;}
-
-
-
-
-
-
-
 
 
 /* la p'tite histoire version responsive*/
@@ -85,34 +76,30 @@ img{
 
 /*Pour la taille desktop*/
 
-@media screen and (min-width: 705px){
-    .Ligne1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    
-    .Ligne2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-
-    img{
-        height: 420px;
-        width: 725px;
-        border-radius: 12em;
-    }
-
-    #burger{
-        height: 420px;
-        width: 725px;
-    }
-
-    
+@media screen and (min-width: 705px) {
+.Ligne1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
 }
+.Ligne2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+img{
+    height: 420px;
+    width: 725px;
+    border-radius: 12em;
+}
+#burger{
+    height: 420px;
+    width: 725px;
+}
+}
+
 
 
 /* Accueil*/
@@ -185,7 +172,6 @@ nav a{
 
 
 
-
 /* Menus */
 
 #bodymenu{
@@ -240,11 +226,11 @@ h3{
 
 
 @media screen and (min-width: 705px) {
-  .lesmenus{
+    .lesmenus{
     display: flex;
     flex-direction: row;
-  }
-  #menuj{
+}
+#menuj{
     width: 50%;
     text-align: center;
   }
@@ -316,12 +302,6 @@ form p{
 }
 
 
-
-
-
-
-
-
 /* Mentions légales*/
 
 #bodymentions{
@@ -331,7 +311,7 @@ form p{
   text-align: center;
 }
 #bodymentions h1{
-  margin-top: 10%;
+    margin-top: 10%;
 }
 .mentions h2{
   padding-top: 10vh;

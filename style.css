@@ -21,6 +21,7 @@ footer {
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 2vh;
+  
 }
 
 .footer{
@@ -29,12 +30,12 @@ footer {
 
 /* Header */
 
-
-a:link {color: blanchedalmond;}
-a:visited {color:blanchedalmond;}
-a:hover {color:blanchedalmond;}
-a:active {color: blanchedalmond;}
-
+/*nav a {
+    a:link {color: blanchedalmond;}
+    a:visited {color:blanchedalmond;}
+    a:hover {color:blanchedalmond;}
+    a:active {color: blanchedalmond;}
+}*/
 
 /* la p'tite histoire version responsive*/
 .titre{
@@ -72,6 +73,9 @@ img{
     1px 0 #000, 0 -1px #000;;
     display: flex;
     padding-bottom: 60px;
+}
+.footer_blanc a{
+  color: blanchedalmond;
 }
 
 /*Pour la taille desktop*/
@@ -130,21 +134,22 @@ nav li{
 
   text-shadow: 3px 0 #fff, 0 2px #fff,
   1px 0 #fff, 0 -1px #fff;
-  padding-top: 12vh;
+  margin-top: 6rem;
   font-family: 'Sancreek', comic sans ms;
   text-align: center;
+  font-size: 2.5rem;
+  
 }
 
 .accueil p{
-  font-size: 4vh;
-  margin-top: 10vh;
+  font-size: 1.5rem;
+  margin-top: 6rem;
   text-align: center;
-  
-  
-  
-  
 }
-
+.footer{
+  margin-top: 3rem;
+}
+  
 nav a{
   text-decoration: none;
   color: blanchedalmond;
@@ -155,100 +160,127 @@ nav a{
 }
 
 
-@media screen and (min-width: 705px){
-  nav ul{
-    font-size: 4vh;
-    
-  }
-
-  .accueil h1{
-    font-size: 12vh;
-    padding-top: 15vh;
-  }
-}
-
-
-
-
-
-
-/* Menus */
-
-#bodymenu{
-    background-color: black;
-    color: blanchedalmond;
-    
-}
-.lesmenus li{
-  list-style: none;
-}
-
-
-
-
-
-
-
-
-#bodymenu h1{
-    text-align: center;
-    font-size: 8vh;
-    margin: 5% 0% 1% 0%;
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-}
-
-#bodymenu h2{
-  font-size: 6vh; 
-  margin: 0 0 2% 0;
-  text-decoration: underline;
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-}
-h3{
-  font-size: 4vh;
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-
-}
-
-
-.lesmenus ul{
-  display: flex;
-  flex-direction: column;
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-}
-.lesmenus p{
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-}
-
-
 @media screen and (min-width: 705px) {
-    .lesmenus{
-    display: flex;
-    flex-direction: row;
-}
-#menuj{
-    width: 50%;
-    text-align: center;
-  }
-  #menu{
-  width: 50%;
-  text-align: center;
-  }
-  #menuj p{
-    font-size: 3vh;
-  }
-  #menu p{
-    font-size: 3vh;
-  }
-  .lesmenus ul{
-    font-size: 3vh;
-  }
+    nav ul {
+        font-size: 4vh;
+
+    }
+
+    .accueil h1 {
+        font-size: 8rem;
+        padding-top: 4rem;
+    }
+
+    .accueil p {
+        font-size: 2rem;
+        margin-top: 10vh;
+    }
 }
 
+    /* Menus */
+    .bodymenu {
+        background-image: url(opacitybackground.jpg);
+        color: blanchedalmond;
+
+    }
+
+    .lesmenus li {
+        list-style: none;
+    }
+
+    .menuj {
+        background-color: black;
+        border-radius: 2em;
+        border: 3em rgb(230, 194, 141) solid;
+        box-shadow: 4px 4px 6px black;
+        color: white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .menu {
+        background-color: black;
+        border-radius: 3em;
+        border: 3em rgb(230, 194, 141) solid;
+        box-shadow: 4px 4px 6px black;
+        color: white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .bodymenu h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: black;
+    }
+
+    .bodymenu h2 {
+        font-size: 3em;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-decoration: underline;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        margin-top: 2em;
+
+    }
+
+
+    .lesmenus ul {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+    }
+
+    .lesmenus p {
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+    }
+
+    footer a {
+        color: #000;
+    }
+
+
+    @media screen and (min-width: 705px) {
+        .lesmenus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+
+        .bodymenu h1 {
+            font-size: 8rem;
+            margin-bottom: 4rem;
+
+        }
+
+        .menuj {
+            width: 40%;
+            border-radius: 3em;
+            border: 3em rgb(230, 194, 141) solid;
+        }
+
+        .menu {
+            width: 40%;
+            border-radius: 3em;
+            border: 3em rgb(230, 194, 141) solid;
+        }
+    }
 
 
 
@@ -258,68 +290,88 @@ h3{
 
 
 
-/* Accès et contacts*/
+
+    /* Accès et contacts*/
+    .corp {
+
+        color: blanchedalmond;
+        background-image: url(opacitybackground.jpg);
+    }
+
+    .bloc {
+        background-color: black;
+        padding-bottom: 2em;
+        padding-top: 2em;
+        border-radius: 3em;
+
+    }
+
+    .corp h1 {
+        text-align: center;
+        padding-top: 5rem;
+        font-family: 'Sancreek', comic sans ms;
+        padding-bottom: 5rem;
+        font-size: 4rem;
+        color: black;
+        text-shadow: 3px 0 #fff, 0 2px #fff,
+        1px 0 #fff, 0 -1px #fff;
+    }
+
+    .bloc h2 {
+        text-align: center;
+        font-size: 4em;
+        padding-bottom: 1em;
+    }
+
+    .bloc p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    form p {
+        margin-top: 0.5em;
+    }
+
+    .bloc a {
+        color: black;
+    }
+
+    @media screen and (min-width: 705px) {
+        .bloc {
+            background-color: black;
+            margin-right: 25em;
+            margin-left: 25em;
+            padding-bottom: 8em;
+            padding-top: 6em;
+        }
+
+        .corp h1 {
+            font-size: 6rem;
+        }
+    }
 
 
-.corp{
-    
-    color: blanchedalmond;
-    background-color: black;
-}
-.corp h1{
-    text-align: center;
-    padding-top: 5rem;
-    font-family: 'Sancreek', comic sans ms;
-    padding-bottom: 30px;
-    font-size: 12vh;
-}
-.corp h2{
-    text-align: center;
 
-    font-size: 40px;
-    padding-bottom: 30px;
-}
-.corp p{
-    text-align: center;
-    font-size: 20px;
-}
+    /* Mentions légales*/
+    #bodymentions {
+        background-color: black;
+        color: blanchedalmond;
+        text-align: center;
+    }
 
-.acces{
-    padding-bottom: 20px;
-}
-form{
+    #bodymentions h1 {
+        margin-top: 10%;
+    }
 
-    padding-top: 8vh;
-}
-form p{
-  margin-top: 3vh;
-}
-.contact h2{
-  padding-top: 3rem;
-}
-.acces h2{
-  padding-top: 2rem;
-}
+    .mentions h2 {
+        padding-top: 10vh;
+        font-size: 6vh;
+    }
 
+    .mentions ul {
+        padding-top: 8vh;
+    }
 
-/* Mentions légales*/
-
-#bodymentions{
-  background-color: black;
-  color:blanchedalmond;
-  
-  text-align: center;
-}
-#bodymentions h1{
-    margin-top: 10%;
-}
-.mentions h2{
-  padding-top: 10vh;
-  font-size: 6vh;
-}
-.mentions ul{
-  padding-top: 8vh;
-}
-.mentions p{
-  padding-top: 6vh;
-}
+    .mentions p {
+        padding-top: 6vh;
+    }
